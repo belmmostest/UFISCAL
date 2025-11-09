@@ -25,10 +25,10 @@ full stack can be exercised without disclosing confidential datasets.
 - **OG-Core foundation.** Firms maximise profits under CES production. Capital
   shares, depreciation, and productivity growth come from the sectoral panel in
   `data/macroeconomic/sectoral_panel.csv`. Margin caps keep each sector aligned
-  with historical averages. Read more about [OG-Core] (https://pslmodels.github.io/OG-Core/content/intro/intro.html)
+  with historical averages. Read more about [OG-Core](https://pslmodels.github.io/OG-Core/content/intro/intro.html)
 - **OpenFisca microsimulation.** The registry sample flows through the
   OG-Core block, then `_compute_corporate_tax` applies statutory brackets,
-  free-zone qualifiers, SME elections, and sector-specific carve-outs. Read more about [Openfisca] (https://openfisca.org/en/)
+  free-zone qualifiers, SME elections, and sector-specific carve-outs. Read more about [Openfisca](https://openfisca.org/en/)
 - **Policy Shock Engine.** Elasticities in
   `data/macroeconomic/elasticities.yaml` translate statutory changes into
   macro deltas while respecting baseline growth trends inferred from the data.
