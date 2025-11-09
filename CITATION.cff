@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use Decreon or reference its outputs, please cite it as below."
+title: "Decreon: AI-Native Consulting Platform"
+authors:
+  - name: "Decreon"
+date-released: 2025-11-09
+version: 1.0.0
+repository-code: "https://github.com/belmmostest/UFISCAL"
+url: "https://decreon.ai"
