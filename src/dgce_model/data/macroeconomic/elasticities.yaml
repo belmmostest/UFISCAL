@@ -1,0 +1,16 @@
+gdp_elasticity_tax: -1.5          # ΔlnY / Δτ_cit
+consumption_elasticity_tax: -0.8  # ΔlnC / Δτ_cit
+investment_elasticity_tax: -2.5   # ΔlnI / Δτ_cit
+employment_elasticity_gdp: 0.6    # ΔlnL / ΔlnY
+
+# --- VAT-related elasticities (Δln var / ΔVAT) ----------------------------
+vat_elasticity_gdp: -0.3            # GDP response to 1pp VAT rate change
+vat_elasticity_consumption: -0.8    # Consumption response
+
+# --- Government spending multipliers -------------------------------------
+gov_spending_multiplier_gdp: 0.9    # ΔY / ΔG (as share of GDP)
+gov_spending_multiplier_employment: 0.5  # Employment response per GDP change
+
+# These values come from literature averages for open, resource-rich
+# economies similar to the UAE.  Users can replace this YAML without touching
+# Python source code.

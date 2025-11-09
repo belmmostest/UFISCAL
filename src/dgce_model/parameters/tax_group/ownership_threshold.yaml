@@ -1,0 +1,10 @@
+description: Minimum ownership percentage required for tax group membership
+metadata:
+  unit: /1
+  reference:
+    - title: Federal Decree-Law No. 47 of 2022, Article 40
+      href: https://www.mof.gov.ae/en/laws-and-policies/
+
+values:
+  2023-06-01:
+    value: 0.95

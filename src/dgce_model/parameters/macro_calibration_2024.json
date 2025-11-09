@@ -1,0 +1,18 @@
+{
+  "year": 2024,
+  "gdp_millions_aed": 612950.0,
+  "household_consumption_millions_aed": 329700.0,
+  "government_consumption_millions_aed": 110331.0,
+  "investment_millions_aed": 97100.0,
+  "exports_millions_aed": 153237.5,
+  "imports_millions_aed": 976050.0,
+  "labor_income_millions_aed": 329700.0,
+  "capital_income_millions_aed": 283250.0,
+  "corporate_tax_base_millions_aed": 70812.5,
+  "employment_persons": 2342045,
+  "consumption_share": 0.37,
+  "investment_share": 0.24,
+  "government_share": 0.18,
+  "labor_share": 0.45,
+  "capital_share": 0.55
+}

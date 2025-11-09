@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+  <title>UAE DGCE Policy-Simulator</title>
+
+  <!--  Bootstrap & Icons  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!--  Chart.js  -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+
+  <!--  React 18 UMD & Babel for JSX  -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <style>
+    body.dark {
+      --bs-body-bg: #1e1e1e;
+      --bs-body-color: #e2e2e2;
+      --bs-card-bg: #2b2b2b;
+      --bs-border-color: #444 !important;
+    }
+
+    .sidebar {
+      min-width: 310px;
+      max-width: 310px;
+    }
+
+    pre.json {
+      background: var(--bs-card-bg);
+      border: var(--bs-border-color) 1px solid;
+      padding: 1rem;
+      white-space: pre-wrap;
+      max-height: 400px;
+      overflow: auto;
+      border-radius: 0.3rem;
+    }
+
+    .kpi-box {
+      background: var(--bs-card-bg);
+      border: var(--bs-border-color) 1px solid;
+      border-left-width: 6px;
+      border-left-color: var(--bs-primary);
+      padding: 0.75rem 1rem;
+      border-radius: 0.4rem;
+    }
+
+    .kpi-label {
+      font-size: 0.75rem;
+      opacity: 0.75;
+    }
+
+    .kpi-value {
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+
+    footer {
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+
+<body class="d-flex flex-column" style="min-height: 100vh">
+  <!--  Navbar  -->
+  <nav class="navbar navbar-dark bg-primary fixed-top">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1"><i class="bi bi-bar-chart-fill me-2"></i>DGCE UAE Policy Simulator</span>
+      <button id="themeToggle" class="btn btn-sm btn-light" title="Toggle dark-mode">
+        <i class="bi bi-moon-fill"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main class="flex-grow-1" style="padding-top: 4rem">
+    <div id="appRoot" class="container-fluid"></div>
+  </main>
+
+  <footer class="bg-body-tertiary text-center py-2">
+    <span>Open-source demo — model&nbsp;version&nbsp;<strong>enhanced-fixed</strong></span>
+    ·
+    <a href="https://github.com/" class="link-secondary" target="_blank" rel="noopener"><i
+        class="bi bi-github me-1"></i>GitHub</a>
+  </footer>
+
+  <!--  React code ------------------------------------------------------ -->
+  <script type="text/babel">
+    const { useState, useRef, useEffect } = React;
+
+    /* ---------- Handy components ----------------------------------- */
+    const NumInput = ({
+      label,
+      name,
+      value,
+      min,
+      max,
+      step = 0.1,
+      unit = "",
+      onChange,
+    }) => (
+      <div className="mb-2">
+        <label className="form-label small">
+          {label} <span className="text-muted">{unit}</span>
+        </label>
+        <input
+          type="number"
+          className="form-control form-control-sm"
+          name={name}
+          value={value}
+          min={min}
+          max={max}
+          step={step}
+          onChange={onChange}
+        />
+      </div>
+    );
+
+    const KPI = ({ label, value, colour = "primary" }) => (
+      <div className="col-6 col-md-3">
+        <div className="kpi-box border-start border-">+ {colour}</div>
+        <div className="kpi-label text-uppercase">{label}</div>
+        <div className="kpi-value">{value}</div>
+      </div>
+          );
+
+    /* ---------- Main App ------------------------------------------- */
+    function App() {
+      const [form, setForm] = useState({
+        standard_rate: 9,
+        vat_rate: 5,
+        compliance_rate: 75,
+        government_spending_rel_change: 0,
+        years: 5,
+      });
+      const [data, setData] = useState(null);
+      const [loading, setLoading] = useState(false);
+
+      const gdpChart = useRef(null);
+      const barChart = useRef(null);
+
+      const handle = (e) =>
+        setForm({ ...form, [e.target.name]: e.target.value });
+
+      const submit = async (e) => {
+        e.preventDefault();
+        setLoading(true);
+        setData(null);
+        if (gdpChart.current) gdpChart.current.destroy();
+        if (barChart.current) barChart.current.destroy();
+
+        const payload = {
+          standard_rate: form.standard_rate / 100,
+          vat_rate: form.vat_rate / 100,
+          compliance_rate: form.compliance_rate / 100,
+          government_spending_rel_change:
+            form.government_spending_rel_change / 100,
+          years: +form.years,
+        };
+
+        try {
+          const res = await fetch("/api/simulate/quick", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload),
+          });
+          const json = await res.json();
+          setData(json);
+        } catch (err) {
+          alert(err);
+        } finally {
+          setLoading(false);
+        }
+      };
+
+      /* ----- build charts after data arrives ---------------------- */
+      useEffect(() => {
+        if (!data || !data.dynamic_path) return;
+
+        // GDP area
+        const gctx = document.getElementById("gdpChart").getContext("2d");
+        gdpChart.current = new Chart(gctx, {
+          type: "line",
+          data: {
+            labels: data.dynamic_path.year_index,
+            datasets: [
+              {
+                data: data.dynamic_path.gdp,
+                label: "GDP (m AED)",
+                fill: true,
+                backgroundColor: "rgba(13,110,253,.15)",
+                borderColor: "#0d6efd",
+                tension: 0.25,
+              },
+            ],
+          },
+          options: { plugins: { legend: { display: false } } },
+        });
+
+        // Revenue bar
+        if (data.revenue_analysis) {
+          const { corporate_component, vat_component, oil_component } =
+            data.revenue_analysis;
+          const bctx = document
+            .getElementById("revChart")
+            .getContext("2d");
+          barChart.current = new Chart(bctx, {
+            type: "bar",
+            data: {
+              labels: ["CIT", "VAT", "Oil"],
+              datasets: [
+                {
+                  data: [corporate_component, vat_component, oil_component],
+                  backgroundColor: ["#0d6efd", "#6f42c1", "#198754"],
+                },
+              ],
+            },
+            options: {
+              indexAxis: "y",
+              plugins: { legend: { display: false } },
+            },
+          });
+        }
+      }, [data]);
+
+      /* ----- Render ------------------------------------------------ */
+      return (
+        <div className="d-flex">
+          {/*  SIDEBAR  */}
+          <aside className="sidebar p-3 border-end bg-body">
+            <form onSubmit={submit}>
+              <NumInput
+                label="Corporate-tax rate"
+                unit="%"
+                name="standard_rate"
+                min="0"
+                max="30"
+                value={form.standard_rate}
+                onChange={handle}
+              />
+              <NumInput
+                label="VAT rate"
+                unit="%"
+                name="vat_rate"
+                min="0"
+                max="15"
+                value={form.vat_rate}
+                onChange={handle}
+              />
+              <NumInput
+                label="Compliance rate"
+                unit="%"
+                name="compliance_rate"
+                min="30"
+                max="100"
+                step="1"
+                value={form.compliance_rate}
+                onChange={handle}
+              />
+              <NumInput
+                label="Gov. spending Δ"
+                unit="%"
+                name="government_spending_rel_change"
+                min="-30"
+                max="30"
+                value={form.government_spending_rel_change}
+                onChange={handle}
+              />
+              <NumInput
+                label="Horizon"
+                unit="years"
+                name="years"
+                min="1"
+                max="20"
+                step="1"
+                value={form.years}
+                onChange={handle}
+              />
+              <button
+                className="btn btn-primary w-100 mt-2"
+                disabled={loading}
+              >
+                {loading ? "Running …" : "Run simulation"}
+              </button>
+            </form>
+          </aside>
+
+          {/*  MAIN AREA  */}
+          <section className="flex-grow-1 p-4">
+            {data && data.revenue_analysis ? (
+              <>
+                {/* KPI row */}
+                <div className="row g-3 mb-4">
+                  <div className="col-6 col-md-3">
+                    <div className="kpi-box border-start border-primary">
+                      <div className="kpi-label">CIT revenue</div>
+                      <div className="kpi-value">
+                        {data.revenue_analysis.corporate_component.toFixed(1)} m
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-6 col-md-3">
+                    <div className="kpi-box border-start border-success">
+                      <div className="kpi-label">Total revenue</div>
+                      <div className="kpi-value">
+                        {data.revenue_analysis.projected_revenue.toFixed(1)} m
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-6 col-md-3">
+                    <div className="kpi-box border-start border-warning">
+                      <div className="kpi-label">GDP impact</div>
+                      <div className="kpi-value">
+                        {data.gdp_impact_pct?.toFixed(2) ?? 0}%</div>
+                    </div>
+                  </div>
+                  <div className="col-6 col-md-3">
+                    <div className="kpi-box border-start border-info">
+                      <div className="kpi-label">Employment Δ</div>
+                      <div className="kpi-value">
+                        {data.employment_impact_pct?.toFixed(2) ?? 0}%</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Charts */}
+                <div className="row g-3">
+                  <div className="col-md-8">
+                    <canvas id="gdpChart" height="200"></canvas>
+                  </div>
+                  <div className="col-md-4">
+                    <canvas id="revChart" height="200"></canvas>
+                  </div>
+                </div>
+
+                {/* JSON */}
+                <pre className="json mt-4">
+                  {JSON.stringify(data, null, 2)}
+                </pre>
+              </>
+            ) : (
+              <div className="text-muted">
+                <p>No results yet. Adjust parameters and hit “Run simulation”.</p>
+              </div>
+            )}
+          </section>
+        </div>
+      );
+    }
+
+    /* ---------- Render app --------------------------------------- */
+    const root = ReactDOM.createRoot(document.getElementById("appRoot"));
+    root.render(<App />);
+
+    /* ---------- Dark-mode toggle ---------------------------------- */
+    document
+      .getElementById("themeToggle")
+      .addEventListener("click", () =>
+        document.body.classList.toggle("dark")
+      );
+  </script>
+</body>
+
+</html>

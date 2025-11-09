@@ -1,0 +1,11 @@
+id,company_size,ISIC_level_1,status,annual_revenue,employee_count,is_free_zone
+10001,Micro,Accommodation and food service activities,Active,1250000,18,0
+10002,Small,Manufacturing,Active,4200000,55,0
+10003,Medium,Wholesale and retail trade; repair of motor vehicles and motorcycles,Active,18500000,230,0
+10004,Corporate,"Electricity, gas, steam and air conditioning supply",Active,74000000,415,0
+10005,Small,Construction,Active,6200000,68,0
+10006,Medium,Information and communication,Active,25500000,160,1
+10007,Corporate,Financial and insurance activities,Active,138000000,520,1
+10008,Micro,"Professional, scientific and technical activities",Active,870000,9,0
+10009,Small,Transportation and storage,Active,3100000,43,0
+10010,Medium,Education,Active,14900000,210,0

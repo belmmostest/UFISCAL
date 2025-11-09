@@ -1,0 +1,7 @@
+description: Corporate tax rate for oil and gas companies
+metadata:
+  reference: Federal Decree-Law No. 47 of 2022, Article 8
+  unit: /1
+values:
+  2023-06-01:
+    value: 0.55

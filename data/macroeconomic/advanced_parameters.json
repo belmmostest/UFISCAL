@@ -1,0 +1,17 @@
+{
+    "labor_augmenting_tech_growth_rate": 0.028,
+    "frisch_elasticity_labor_supply": 0.025,
+    "labor_productivity_type_fractions": {
+        "high": 0.3,
+        "medium": 0.4,
+        "low": 0.3
+    },
+    "consumption_good_share_parameters": 0.95,
+    "capital_share_output": 0.42,
+    "elasticity_substitution_capital_labor": 1.7,
+    "total_factor_productivity": 1.35,
+    "capital_depreciation_rate": 0.065,
+    "government_capital_gdp_ratio": 0.11,
+    "consumption_share": 0.37,
+    "investment_share": 0.26
+}

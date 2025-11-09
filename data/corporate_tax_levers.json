@@ -1,0 +1,64 @@
+{
+    "statutory_rate_schedule": {
+        "type": "progressive",
+        "brackets": [
+            {
+                "rate": "0%",
+                "range": "AED 0–500,000"
+            },
+            {
+                "rate": "9%",
+                "range": "AED 500,000–1,500,000"
+            },
+            {
+                "rate": "15%",
+                "range": "profits above AED 1,500,000"
+            }
+        ]
+    },
+    "tax_base": {
+        "depreciation_amortization": {
+            "method": "straight-line",
+            "basis": "sample useful lives",
+            "asset_classes": {
+                "Buildings": "25",
+                "IT equipment": "4",
+                "Vehicles": "6"
+            }
+        },
+        "investment_allowances_accelerated_depreciation": "None",
+        "interest_deductibility": {
+            "limit": "30% of EBITDA",
+            "excess_treatment": "Carryforward"
+        },
+        "loss_treatment": {
+            "carry_forward": "5 years",
+            "carry_back": "Not allowed",
+            "group_relief": "Permitted"
+        }
+    },
+    "thresholds_exemptions": {
+        "SME_relief": {
+            "rate": "0%",
+            "threshold": "AED 375,000 turnover"
+        },
+        "free_zone_qualifying_profits": {
+            "rate": "0%"
+        }
+    },
+    "tax_credits_rebates": {
+        "free_zone_income_exemption": "100% on qualifying income"
+    },
+    "payment_rules": {
+        "return_due": "9 months after year end",
+        "instalments": "Quarterly",
+        "late_payment_penalty": {
+            "rate": "5% per month",
+            "maximum": "25%"
+        }
+    },
+    "sectoral_carve_outs": {
+        "strategic_projects": "0%",
+        "resource_extraction": "40%"
+    }
+}

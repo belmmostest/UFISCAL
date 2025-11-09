@@ -1,0 +1,16 @@
+description: Maximum revenue to qualify for small business relief
+metadata:
+  unit: currency-AED
+  reference:
+    - title: Federal Decree-Law No. 47 of 2022, Article 21
+      href: https://www.mof.gov.ae/en/laws-and-policies/
+
+values:
+  2023-06-01:
+    value: 3000000
+    metadata:
+      note: Small business relief applies until December 31, 2026
+  2027-01-01:
+    value: null
+    metadata:
+      note: Small business relief expires

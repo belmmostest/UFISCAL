@@ -1,0 +1,10 @@
+description: Absolute de minimis threshold for non-qualifying revenue
+metadata:
+  unit: currency-AED
+  reference:
+    - title: Cabinet Decision No. 55 of 2023
+      href: https://www.mof.gov.ae/en/laws-and-policies/
+
+values:
+  2023-06-01:
+    value: 5000000

@@ -1,0 +1,16 @@
+production:
+  Z: 1.4
+  gamma: 0.45
+  gamma_g: 0.12
+  epsilon: 1.4
+  g_y: 0.03
+inputs:
+  private_capital_share_of_revenue: 0.88
+  public_capital_share_of_revenue: 0.12
+prices:
+  r: 0.05
+  delta: 0.07
+  wage: 1.0
+  price: 1.0
+  delta_tax: 1.0
+  tau_inv: 0.0

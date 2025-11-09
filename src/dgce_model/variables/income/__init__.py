@@ -1,0 +1,1 @@
+# Income variables module

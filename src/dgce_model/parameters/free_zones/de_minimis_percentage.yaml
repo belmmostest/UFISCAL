@@ -1,0 +1,10 @@
+description: Percentage de minimis threshold for non-qualifying revenue
+metadata:
+  unit: /1
+  reference:
+    - title: Cabinet Decision No. 55 of 2023
+      href: https://www.mof.gov.ae/en/laws-and-policies/
+
+values:
+  2023-06-01:
+    value: 0.05

@@ -1,0 +1,1654 @@
+{
+  "status": "success",
+  "timestamp_utc": "2025-11-09T08:53:57.295893+00:00",
+  "quick_simulation_enhanced": {
+    "corporate_tax_rate_pct": 9.0,
+    "micro_tax_revenue": 0.0,
+    "revenue_change_m": -4.77984375,
+    "revenue_change_pct": -29.289436041201107,
+    "avg_effective_rate_pct": 0.0,
+    "gdp_impact_pct": -0.7798097316257443,
+    "employment_impact_pct": -0.0037572650705604044,
+    "investment_impact_pct": -2.4655530699339496,
+    "consumption_impact_pct": -0.7272246734793405,
+    "total_companies": 10,
+    "taxable_companies": 0,
+    "tax_base_companies_pct": 0.0,
+    "compliance_metrics": {
+      "expected_compliance_rate": 75.0,
+      "implied_compliance_rate": 0,
+      "compliance_gap_m": 0.0,
+      "total_potential_tax_m": 0.0,
+      "actual_collections_m": 0.0
+    },
+    "revenue_analysis": {
+      "new_corporate_tax_base": 70812.5,
+      "projected_revenue": 11539.5,
+      "revenue_change": -4.77984375,
+      "revenue_change_pct": -29.289436041201107,
+      "corporate_component": 0.0,
+      "oil_component": 0.0,
+      "vat_component": 11539.5,
+      "effective_rate": 0.0675,
+      "compliance_impact": 0.0,
+      "gross_microsim_corporate_tax": 0.0,
+      "baseline_revenue": 16319.34375,
+      "validation_passed": true
+    },
+    "simulation_valid": true,
+    "validation_details": {
+      "total_tax": 0.0,
+      "total_revenue": 286520000,
+      "avg_rate": 0.0,
+      "validation_passed": true,
+      "checks": {
+        "positive_tax": true,
+        "reasonable_rate": true,
+        "revenue_consistency": true,
+        "no_extreme_outliers": true
+      }
+    },
+    "simulation_timestamp": "2025-11-09T12:53:57.339815",
+    "parameters_used": {
+      "standard_rate": 0.09,
+      "oil_gas_rate": 0.55,
+      "vat_rate": 0.05,
+      "compliance": 0.75,
+      "threshold": 375000.0,
+      "small_biz_threshold": 3000000.0,
+      "government_spending_rel_change": 0.0,
+      "incentives": {}
+    },
+    "dynamic_path": {
+      "year_index": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "gdp": [
+        612950.0,
+        646662.25,
+        682228.67375,
+        719751.2508062499,
+        759337.5696005936
+      ],
+      "consumption": [
+        329700.0,
+        347833.5,
+        366964.34249999997,
+        387147.38133749994,
+        408440.48731106246
+      ],
+      "investment": [
+        97100.0,
+        102926.0,
+        109101.56000000001,
+        115647.6536,
+        122586.51281600003
+      ],
+      "government": [
+        110331.0,
+        116399.20499999999,
+        122801.16127499999,
+        129555.22514512498,
+        136680.76252810686
+      ],
+      "exports": [
+        153237.5,
+        161665.5625,
+        170557.1684375,
+        179937.81270156248,
+        189834.3924001484
+      ],
+      "imports": [
+        976050.0,
+        1029732.7499999999,
+        1086368.05125,
+        1146118.2940687498,
+        1209154.800242531
+      ],
+      "employment": [
+        2342045.0,
+        2388885.9,
+        2436663.618,
+        2485396.8903600005,
+        2535104.8281672
+      ]
+    }
+  },
+  "comprehensive_analysis_enhanced": {
+    "gdp_impact": -0.7798097316257443,
+    "employment_impact": -0.0037572650705604044,
+    "investment_impact": -2.4655530699339496,
+    "consumption_impact": -0.7272246734793405,
+    "revenue_analysis": {
+      "new_corporate_tax_base": 70812.5,
+      "projected_revenue": 11539.5,
+      "revenue_change": -4.77984375,
+      "revenue_change_pct": -29.289436041201107,
+      "corporate_component": 0.0,
+      "oil_component": 0.0,
+      "vat_component": 11539.5,
+      "effective_rate": 0.0675,
+      "compliance_impact": 0.0,
+      "gross_microsim_corporate_tax": 0.0,
+      "baseline_revenue": 16319.34375,
+      "validation_passed": true,
+      "revenue_efficiency": 0.0,
+      "laffer_position": 0.36,
+      "compliance_gap": 25.0
+    },
+    "microsimulation": {
+      "total_tax_revenue": 0.0,
+      "average_effective_rate": 0.0,
+      "companies_affected": 0,
+      "validation_passed": true
+    },
+    "sectoral_impacts": {
+      "Accommodation and food service activities": -0.0,
+      "Activities of households as employers": -0.0,
+      "Agriculture, forestry and fishing": -0.0,
+      "Arts, entertainment and recreation": -0.0,
+      "Construction": -0.0,
+      "Education": -0.0,
+      "Financial and insurance activities": -0.0,
+      "Information and communication": -0.0,
+      "Manufacturing": -0.0,
+      "Professional, scientific and technical activities": -0.0
+    },
+    "sector_distribution": {
+      "Accommodation and food service activities": {
+        "company_count": 1,
+        "percentage": 10.0,
+        "dgce_impact": -0.0
+      },
+      "Manufacturing": {
+        "company_count": 1,
+        "percentage": 10.0,
+        "dgce_impact": -0.0
+      },
+      "Wholesale and retail trade; repair of motor vehicles and motorcycles": {
+        "company_count": 1,
+        "percentage": 10.0,
+        "dgce_impact": 0
+      },
+      "Electricity, gas, steam and air conditioning supply": {
+        "company_count": 1,
+        "percentage": 10.0,
+        "dgce_impact": 0
+      },
+      "Construction": {
+        "company_count": 1,
+        "percentage": 10.0,
+        "dgce_impact": -0.0
+      },
+      "Information and communication": {
+        "company_count": 1,
+        "percentage": 10.0,
+        "dgce_impact": -0.0
+      },
+      "Financial and insurance activities": {
+        "company_count": 1,
+        "percentage": 10.0,
+        "dgce_impact": -0.0
+      },
+      "Professional, scientific and technical activities": {
+        "company_count": 1,
+        "percentage": 10.0,
+        "dgce_impact": -0.0
+      },
+      "Transportation and storage": {
+        "company_count": 1,
+        "percentage": 10.0,
+        "dgce_impact": 0
+      },
+      "Education": {
+        "company_count": 1,
+        "percentage": 10.0,
+        "dgce_impact": -0.0
+      }
+    },
+    "risk_assessment": {
+      "overall_risk_score": 15.335669966963046,
+      "risk_level": "Low",
+      "economic_risk": "Low",
+      "employment_risk": "Low",
+      "compliance_risk": "Medium",
+      "risk_factors": {
+        "gdp_decline": false,
+        "employment_decline": false,
+        "low_compliance": false,
+        "investment_decline": false
+      },
+      "mitigation_recommendations": [
+        "Current policy parameters appear to have manageable risk levels"
+      ]
+    },
+    "dynamic_impacts": {
+      "years": 10,
+      "path": {
+        "year_index": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "gdp": [
+          612950.0,
+          646662.25,
+          682228.67375,
+          719751.2508062499,
+          759337.5696005936,
+          801101.1359286262,
+          845161.6984047005,
+          891645.591816959,
+          940686.0993668918,
+          992423.8348320706
+        ],
+        "consumption": [
+          329700.0,
+          347833.5,
+          366964.34249999997,
+          387147.38133749994,
+          408440.48731106246,
+          430904.71411317086,
+          454604.47338939516,
+          479607.71942581184,
+          505986.14399423153,
+          533815.3819139142
+        ],
+        "investment": [
+          97100.0,
+          102926.0,
+          109101.56000000001,
+          115647.6536,
+          122586.51281600003,
+          129941.70358496002,
+          137738.20580005762,
+          146002.4981480611,
+          154762.6480369448,
+          164048.40691916147
+        ],
+        "government": [
+          110331.0,
+          116399.20499999999,
+          122801.16127499999,
+          129555.22514512498,
+          136680.76252810686,
+          144198.2044671527,
+          152129.1057128461,
+          160496.20652705262,
+          169323.4978860405,
+          178636.29026977273
+        ],
+        "exports": [
+          153237.5,
+          161665.5625,
+          170557.1684375,
+          179937.81270156248,
+          189834.3924001484,
+          200275.28398215654,
+          211290.42460117512,
+          222911.39795423974,
+          235171.52484172294,
+          248105.95870801766
+        ],
+        "imports": [
+          976050.0,
+          1029732.7499999999,
+          1086368.05125,
+          1146118.2940687498,
+          1209154.800242531,
+          1275658.3142558702,
+          1345819.5215399428,
+          1419839.5952246396,
+          1497930.7729619949,
+          1580316.9654749043
+        ],
+        "employment": [
+          2342045.0,
+          2388885.9,
+          2436663.618,
+          2485396.8903600005,
+          2535104.8281672,
+          2585806.924730544,
+          2637523.063225155,
+          2690273.524489658,
+          2744078.9949794514,
+          2798960.5748790405
+        ]
+      }
+    },
+    "oil_sector": {
+      "production": 0.0,
+      "revenue": 0.0
+    },
+    "policy_parameters": {
+      "standard_rate": 0.09,
+      "compliance": 0.75,
+      "threshold": 375000.0,
+      "small_biz_threshold": 3000000.0,
+      "oil_gas_rate": 0.55,
+      "vat_rate": 0.05,
+      "government_spending_rel_change": 0.0,
+      "time_horizon": 10,
+      "incentives": {}
+    },
+    "analysis_timestamp": "2025-11-09T12:53:57.411002",
+    "analysis_type": "comprehensive",
+    "model_version": "enhanced_fixed"
+  },
+  "sector_analyzer_enhanced": {
+    "Manufacturing": {
+      "sector_name": "Manufacturing",
+      "sector_code": "C",
+      "sector_profile": {
+        "total_companies": 1,
+        "total_revenue": 4200000.0,
+        "average_revenue": 4200000.0,
+        "total_employees": 55,
+        "average_employees": 55.0,
+        "market_share": 1.4658662571548233,
+        "characteristics": {
+          "tax_sensitivity": 1.0,
+          "international_exposure": 0.7,
+          "capital_intensity": 0.8,
+          "innovation_intensity": 0.6,
+          "regulatory_intensity": 0.6
+        }
+      },
+      "sector_gdp_impact": -0.7798097316257443,
+      "sector_employment_impact": -0.0037572650705604044,
+      "sector_investment_impact": -2.4655530699339496,
+      "sector_competitiveness_impact": -0.026513530875275308,
+      "sector_tax_burden": 0.0,
+      "sector_effective_rate": 0.0,
+      "sector_companies_affected": 0,
+      "microsimulation_results": {
+        "sector_tax_burden": 0.0,
+        "sector_effective_rate": 0.0,
+        "companies_affected": 0,
+        "total_sector_companies": 1,
+        "validation_passed": true,
+        "validation_details": {
+          "total_tax": 0.0,
+          "total_revenue": 4200000,
+          "avg_rate": 0.0,
+          "validation_passed": true,
+          "checks": {
+            "positive_tax": true,
+            "reasonable_rate": true,
+            "revenue_consistency": true,
+            "no_extreme_outliers": true
+          }
+        }
+      },
+      "competitive_analysis": {
+        "competitiveness_score": 1.2000000000000002,
+        "tax_rate_impact": -9.0,
+        "compliance_burden": 12.5,
+        "international_exposure": 0.7,
+        "regulatory_intensity": 0.6,
+        "competitive_position": "Moderate"
+      },
+      "sector_characteristics": {
+        "tax_sensitivity": 1.0,
+        "international_exposure": 0.7,
+        "capital_intensity": 0.8,
+        "innovation_intensity": 0.6,
+        "regulatory_intensity": 0.6
+      },
+      "policy_recommendations": [
+        "Evaluate impact on capital investment decisions",
+        "Consider enhanced depreciation allowances"
+      ],
+      "relative_impact": {
+        "relative_gdp_impact": 1.0,
+        "relative_employment_impact": 1.0,
+        "sector_sensitivity": 1.0,
+        "impact_ranking": "Neutral impact"
+      },
+      "analysis_valid": true,
+      "analysis_timestamp": "2025-11-09T12:53:57.448933",
+      "policy_parameters": {
+        "standard_rate": 0.09,
+        "compliance_rate": 0.75,
+        "threshold": 375000.0,
+        "small_biz_threshold": 3000000.0,
+        "oil_gas_rate": 0.55,
+        "incentives": {}
+      },
+      "analysis_type": "sector_specific"
+    }
+  },
+  "strategic_policy_scenarios": {
+    "growth_focused": {
+      "gdp_impact": 1.1100951341871272,
+      "employment_impact": 0.005348640191992521,
+      "investment_impact": 0.029837001374261356,
+      "consumption_impact": 0.052308835285748596,
+      "revenue_analysis": {
+        "new_corporate_tax_base": 70812.5,
+        "projected_revenue": 11539.5,
+        "revenue_change": -4.77984375,
+        "revenue_change_pct": -29.289436041201107,
+        "corporate_component": 0.0,
+        "oil_component": 0.0,
+        "vat_component": 11539.5,
+        "effective_rate": 0.052500000000000005,
+        "compliance_impact": 0.0,
+        "gross_microsim_corporate_tax": 0.0,
+        "baseline_revenue": 16319.34375,
+        "validation_passed": true,
+        "revenue_efficiency": 0.0,
+        "laffer_position": 0.28,
+        "compliance_gap": 25.0
+      },
+      "microsimulation": {
+        "total_tax_revenue": 0.0,
+        "average_effective_rate": 0.0,
+        "companies_affected": 0,
+        "validation_passed": true
+      },
+      "sectoral_impacts": {
+        "Accommodation and food service activities": 0.0010538379965739453,
+        "Activities of households as employers": 0.0010163145444163468,
+        "Agriculture, forestry and fishing": 0.0010212089077412509,
+        "Arts, entertainment and recreation": 0.0080248173245796,
+        "Construction": 0.0012120890774125128,
+        "Education": 0.0010505750876906759,
+        "Financial and insurance activities": 0.00122840362182886,
+        "Information and communication": 0.0010538379965739453,
+        "Manufacturing": 0.0012936617994942486,
+        "Professional, scientific and technical activities": 0.0010685210865486576
+      },
+      "sector_distribution": {
+        "Accommodation and food service activities": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0.0010538379965739453
+        },
+        "Manufacturing": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0.0012936617994942486
+        },
+        "Wholesale and retail trade; repair of motor vehicles and motorcycles": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0
+        },
+        "Electricity, gas, steam and air conditioning supply": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0
+        },
+        "Construction": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0.0012120890774125128
+        },
+        "Information and communication": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0.0010538379965739453
+        },
+        "Financial and insurance activities": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0.00122840362182886
+        },
+        "Professional, scientific and technical activities": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0.0010685210865486576
+        },
+        "Transportation and storage": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0
+        },
+        "Education": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0.0010505750876906759
+        }
+      },
+      "risk_assessment": {
+        "overall_risk_score": 7.5,
+        "risk_level": "Low",
+        "economic_risk": "Low",
+        "employment_risk": "Low",
+        "compliance_risk": "Medium",
+        "risk_factors": {
+          "gdp_decline": false,
+          "employment_decline": false,
+          "low_compliance": false,
+          "investment_decline": false
+        },
+        "mitigation_recommendations": [
+          "Current policy parameters appear to have manageable risk levels"
+        ]
+      },
+      "dynamic_impacts": {
+        "years": 10,
+        "path": {
+          "year_index": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "gdp": [
+            631338.5,
+            666062.1175,
+            702695.5339624999,
+            741343.7883304374,
+            782117.6966886115,
+            825134.170006485,
+            870516.5493568415,
+            918394.9595714677,
+            968906.6823478986,
+            1022196.5498770328
+          ],
+          "consumption": [
+            334975.2,
+            353398.836,
+            372835.77197999996,
+            393341.73943889997,
+            414975.53510803945,
+            437799.1895389816,
+            461878.14496362547,
+            487281.4429366248,
+            514081.92229813925,
+            542356.4280245368
+          ],
+          "investment": [
+            101955.0,
+            108072.3,
+            114556.63800000002,
+            121430.03628000001,
+            128715.83845680003,
+            136438.78876420803,
+            144625.1160900605,
+            153302.62305546415,
+            162500.78043879205,
+            172250.82726511956
+          ],
+          "government": [
+            110331.0,
+            116399.20499999999,
+            122801.16127499999,
+            129555.22514512498,
+            136680.76252810686,
+            144198.2044671527,
+            152129.1057128461,
+            160496.20652705262,
+            169323.4978860405,
+            178636.29026977273
+          ],
+          "exports": [
+            153237.5,
+            161665.5625,
+            170557.1684375,
+            179937.81270156248,
+            189834.3924001484,
+            200275.28398215654,
+            211290.42460117512,
+            222911.39795423974,
+            235171.52484172294,
+            248105.95870801766
+          ],
+          "imports": [
+            976050.0,
+            1029732.7499999999,
+            1086368.05125,
+            1146118.2940687498,
+            1209154.800242531,
+            1275658.3142558702,
+            1345819.5215399428,
+            1419839.5952246396,
+            1497930.7729619949,
+            1580316.9654749043
+          ],
+          "employment": [
+            2384201.81,
+            2431885.8462,
+            2480523.5631239996,
+            2530134.0343864807,
+            2580736.71507421,
+            2632351.4493756937,
+            2684998.478363208,
+            2738698.447930472,
+            2793472.4168890817,
+            2849341.8652268634
+          ]
+        }
+      },
+      "oil_sector": {
+        "production": 0.0,
+        "revenue": 0.0
+      },
+      "policy_parameters": {
+        "standard_rate": 0.07,
+        "compliance": 0.75,
+        "threshold": 375000.0,
+        "small_biz_threshold": 3000000.0,
+        "oil_gas_rate": 0.55,
+        "vat_rate": 0.05,
+        "government_spending_rel_change": 0.0,
+        "time_horizon": 10,
+        "incentives": {
+          "rd_credit": true,
+          "startup_exemption": true
+        }
+      },
+      "analysis_timestamp": "2025-11-09T12:53:57.506302",
+      "analysis_type": "comprehensive",
+      "model_version": "enhanced_fixed",
+      "scenario_name": "growth_focused",
+      "scenario_description": "Growth-focused policy with lower rates and innovation incentives",
+      "scenario_parameters": {
+        "standard_rate": 0.07,
+        "compliance": 0.75,
+        "incentives": {
+          "rd_credit": true,
+          "startup_exemption": true
+        },
+        "time_horizon": 10,
+        "description": "Growth-focused policy with lower rates and innovation incentives"
+      }
+    },
+    "revenue_focused": {
+      "gdp_impact": -2.639904865812872,
+      "employment_impact": -0.012719541626189294,
+      "investment_impact": -4.150466028928768,
+      "consumption_impact": -1.2885485889566755,
+      "revenue_analysis": {
+        "new_corporate_tax_base": 70812.5,
+        "projected_revenue": 11539.5,
+        "revenue_change": -4.77984375,
+        "revenue_change_pct": -29.289436041201107,
+        "corporate_component": 0.0,
+        "oil_component": 0.0,
+        "vat_component": 11539.5,
+        "effective_rate": 0.096,
+        "compliance_impact": 424.8750000000004,
+        "gross_microsim_corporate_tax": 0.0,
+        "baseline_revenue": 16319.34375,
+        "validation_passed": true,
+        "revenue_efficiency": 0.0,
+        "laffer_position": 0.48,
+        "compliance_gap": 19.999999999999996
+      },
+      "microsimulation": {
+        "total_tax_revenue": 0.0,
+        "average_effective_rate": 0.0,
+        "companies_affected": 0,
+        "validation_passed": true
+      },
+      "sectoral_impacts": {
+        "Accommodation and food service activities": -0.0015807569948609187,
+        "Activities of households as employers": -0.001524471816624521,
+        "Agriculture, forestry and fishing": -0.001531813361611877,
+        "Arts, entertainment and recreation": -0.012037225986869406,
+        "Construction": -0.00181813361611877,
+        "Education": -0.0015758626315360146,
+        "Financial and insurance activities": -0.0018426054327432908,
+        "Information and communication": -0.0015807569948609187,
+        "Manufacturing": -0.0019404926992413738,
+        "Professional, scientific and technical activities": -0.0016027816298229871
+      },
+      "sector_distribution": {
+        "Accommodation and food service activities": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": -0.0015807569948609187
+        },
+        "Manufacturing": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": -0.0019404926992413738
+        },
+        "Wholesale and retail trade; repair of motor vehicles and motorcycles": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0
+        },
+        "Electricity, gas, steam and air conditioning supply": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0
+        },
+        "Construction": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": -0.00181813361611877
+        },
+        "Information and communication": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": -0.0015807569948609187
+        },
+        "Financial and insurance activities": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": -0.0018426054327432908
+        },
+        "Professional, scientific and technical activities": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": -0.0016027816298229871
+        },
+        "Transportation and storage": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0
+        },
+        "Education": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": -0.0015758626315360146
+        }
+      },
+      "risk_assessment": {
+        "overall_risk_score": 32.52624407439061,
+        "risk_level": "Low",
+        "economic_risk": "Medium",
+        "employment_risk": "Low",
+        "compliance_risk": "Low",
+        "risk_factors": {
+          "gdp_decline": true,
+          "employment_decline": false,
+          "low_compliance": false,
+          "investment_decline": false
+        },
+        "mitigation_recommendations": [
+          "Current policy parameters appear to have manageable risk levels"
+        ]
+      },
+      "dynamic_impacts": {
+        "years": 10,
+        "path": {
+          "year_index": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "gdp": [
+            585367.25,
+            617562.44875,
+            651528.3834312499,
+            687362.4445199686,
+            725167.3789685669,
+            765051.584811838,
+            807129.4219764889,
+            851521.5401851957,
+            898355.2248953816,
+            947764.7622646274
+          ],
+          "consumption": [
+            321787.2,
+            339485.496,
+            358157.19827999995,
+            377855.84418539994,
+            398637.9156155969,
+            420563.00097445474,
+            443693.96602804965,
+            468097.13415959233,
+            493842.47653836996,
+            521003.8127479803
+          ],
+          "investment": [
+            89817.5,
+            95206.55,
+            100918.94300000001,
+            106974.07958,
+            113392.52435480003,
+            120196.07581608802,
+            127407.8403650533,
+            135052.3107869565,
+            143155.44943417393,
+            151744.77640022436
+          ],
+          "government": [
+            110331.0,
+            116399.20499999999,
+            122801.16127499999,
+            129555.22514512498,
+            136680.76252810686,
+            144198.2044671527,
+            152129.1057128461,
+            160496.20652705262,
+            169323.4978860405,
+            178636.29026977273
+          ],
+          "exports": [
+            153237.5,
+            161665.5625,
+            170557.1684375,
+            179937.81270156248,
+            189834.3924001484,
+            200275.28398215654,
+            211290.42460117512,
+            222911.39795423974,
+            235171.52484172294,
+            248105.95870801766
+          ],
+          "imports": [
+            976050.0,
+            1029732.7499999999,
+            1086368.05125,
+            1146118.2940687498,
+            1209154.800242531,
+            1275658.3142558702,
+            1345819.5215399428,
+            1419839.5952246396,
+            1497930.7729619949,
+            1580316.9654749043
+          ],
+          "employment": [
+            2278809.785,
+            2324385.9806999997,
+            2370873.700314,
+            2418291.1743202806,
+            2466656.9978066855,
+            2515990.1377628194,
+            2566309.940518076,
+            2617636.139328437,
+            2669988.862115006,
+            2723388.6393573065
+          ]
+        }
+      },
+      "oil_sector": {
+        "production": 0.0,
+        "revenue": 0.0
+      },
+      "policy_parameters": {
+        "standard_rate": 0.12,
+        "compliance": 0.8,
+        "threshold": 375000.0,
+        "small_biz_threshold": 3000000.0,
+        "oil_gas_rate": 0.55,
+        "vat_rate": 0.05,
+        "government_spending_rel_change": 0.0,
+        "time_horizon": 10,
+        "incentives": {}
+      },
+      "analysis_timestamp": "2025-11-09T12:53:57.562248",
+      "analysis_type": "comprehensive",
+      "model_version": "enhanced_fixed",
+      "scenario_name": "revenue_focused",
+      "scenario_description": "Revenue optimization with higher rates and enhanced compliance",
+      "scenario_parameters": {
+        "standard_rate": 0.12,
+        "compliance": 0.8,
+        "time_horizon": 10,
+        "incentives": {},
+        "description": "Revenue optimization with higher rates and enhanced compliance"
+      }
+    },
+    "innovation_hub": {
+      "gdp_impact": -0.7798097316257443,
+      "employment_impact": -0.0037572650705604044,
+      "investment_impact": -2.4655530699339496,
+      "consumption_impact": -0.7272246734793405,
+      "revenue_analysis": {
+        "new_corporate_tax_base": 70812.5,
+        "projected_revenue": 11539.5,
+        "revenue_change": -4.77984375,
+        "revenue_change_pct": -29.289436041201107,
+        "corporate_component": 0.0,
+        "oil_component": 0.0,
+        "vat_component": 11539.5,
+        "effective_rate": 0.063,
+        "compliance_impact": -318.6562500000003,
+        "gross_microsim_corporate_tax": 0.0,
+        "baseline_revenue": 16319.34375,
+        "validation_passed": true,
+        "revenue_efficiency": 0.0,
+        "laffer_position": 0.36,
+        "compliance_gap": 30.000000000000004
+      },
+      "microsimulation": {
+        "total_tax_revenue": 0.0,
+        "average_effective_rate": 0.0,
+        "companies_affected": 0,
+        "validation_passed": true
+      },
+      "sectoral_impacts": {
+        "Accommodation and food service activities": -0.0,
+        "Activities of households as employers": -0.0,
+        "Agriculture, forestry and fishing": -0.0,
+        "Arts, entertainment and recreation": -0.0,
+        "Construction": -0.0,
+        "Education": -0.0,
+        "Financial and insurance activities": -0.0,
+        "Information and communication": -0.0,
+        "Manufacturing": -0.0,
+        "Professional, scientific and technical activities": -0.0
+      },
+      "sector_distribution": {
+        "Accommodation and food service activities": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": -0.0
+        },
+        "Manufacturing": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": -0.0
+        },
+        "Wholesale and retail trade; repair of motor vehicles and motorcycles": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0
+        },
+        "Electricity, gas, steam and air conditioning supply": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0
+        },
+        "Construction": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": -0.0
+        },
+        "Information and communication": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": -0.0
+        },
+        "Financial and insurance activities": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": -0.0
+        },
+        "Professional, scientific and technical activities": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": -0.0
+        },
+        "Transportation and storage": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0
+        },
+        "Education": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": -0.0
+        }
+      },
+      "risk_assessment": {
+        "overall_risk_score": 16.83566996696305,
+        "risk_level": "Low",
+        "economic_risk": "Low",
+        "employment_risk": "Low",
+        "compliance_risk": "Medium",
+        "risk_factors": {
+          "gdp_decline": false,
+          "employment_decline": false,
+          "low_compliance": false,
+          "investment_decline": false
+        },
+        "mitigation_recommendations": [
+          "Current policy parameters appear to have manageable risk levels"
+        ]
+      },
+      "dynamic_impacts": {
+        "years": 10,
+        "path": {
+          "year_index": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "gdp": [
+            612950.0,
+            646662.25,
+            682228.67375,
+            719751.2508062499,
+            759337.5696005936,
+            801101.1359286262,
+            845161.6984047005,
+            891645.591816959,
+            940686.0993668918,
+            992423.8348320706
+          ],
+          "consumption": [
+            329700.0,
+            347833.5,
+            366964.34249999997,
+            387147.38133749994,
+            408440.48731106246,
+            430904.71411317086,
+            454604.47338939516,
+            479607.71942581184,
+            505986.14399423153,
+            533815.3819139142
+          ],
+          "investment": [
+            97100.0,
+            102926.0,
+            109101.56000000001,
+            115647.6536,
+            122586.51281600003,
+            129941.70358496002,
+            137738.20580005762,
+            146002.4981480611,
+            154762.6480369448,
+            164048.40691916147
+          ],
+          "government": [
+            110331.0,
+            116399.20499999999,
+            122801.16127499999,
+            129555.22514512498,
+            136680.76252810686,
+            144198.2044671527,
+            152129.1057128461,
+            160496.20652705262,
+            169323.4978860405,
+            178636.29026977273
+          ],
+          "exports": [
+            153237.5,
+            161665.5625,
+            170557.1684375,
+            179937.81270156248,
+            189834.3924001484,
+            200275.28398215654,
+            211290.42460117512,
+            222911.39795423974,
+            235171.52484172294,
+            248105.95870801766
+          ],
+          "imports": [
+            976050.0,
+            1029732.7499999999,
+            1086368.05125,
+            1146118.2940687498,
+            1209154.800242531,
+            1275658.3142558702,
+            1345819.5215399428,
+            1419839.5952246396,
+            1497930.7729619949,
+            1580316.9654749043
+          ],
+          "employment": [
+            2342045.0,
+            2388885.9,
+            2436663.618,
+            2485396.8903600005,
+            2535104.8281672,
+            2585806.924730544,
+            2637523.063225155,
+            2690273.524489658,
+            2744078.9949794514,
+            2798960.5748790405
+          ]
+        }
+      },
+      "oil_sector": {
+        "production": 0.0,
+        "revenue": 0.0
+      },
+      "policy_parameters": {
+        "standard_rate": 0.09,
+        "compliance": 0.7,
+        "threshold": 375000.0,
+        "small_biz_threshold": 3000000.0,
+        "oil_gas_rate": 0.55,
+        "vat_rate": 0.05,
+        "government_spending_rel_change": 0.0,
+        "time_horizon": 10,
+        "incentives": {
+          "rd_credit": true,
+          "startup_exemption": true,
+          "hq_incentive": true
+        }
+      },
+      "analysis_timestamp": "2025-11-09T12:53:57.617720",
+      "analysis_type": "comprehensive",
+      "model_version": "enhanced_fixed",
+      "scenario_name": "innovation_hub",
+      "scenario_description": "Innovation hub strategy with comprehensive R&D incentives",
+      "scenario_parameters": {
+        "standard_rate": 0.09,
+        "compliance": 0.7,
+        "time_horizon": 10,
+        "incentives": {
+          "rd_credit": true,
+          "startup_exemption": true,
+          "hq_incentive": true
+        },
+        "description": "Innovation hub strategy with comprehensive R&D incentives"
+      }
+    },
+    "regional_leader": {
+      "gdp_impact": 0.3600951341871275,
+      "employment_impact": 0.0017350038283561599,
+      "investment_impact": -0.8062236046863442,
+      "consumption_impact": -0.21586264956273615,
+      "revenue_analysis": {
+        "new_corporate_tax_base": 70812.5,
+        "projected_revenue": 11539.5,
+        "revenue_change": -4.77984375,
+        "revenue_change_pct": -29.289436041201107,
+        "corporate_component": 0.0,
+        "oil_component": 0.0,
+        "vat_component": 11539.5,
+        "effective_rate": 0.06,
+        "compliance_impact": 0.0,
+        "gross_microsim_corporate_tax": 0.0,
+        "baseline_revenue": 16319.34375,
+        "validation_passed": true,
+        "revenue_efficiency": 0.0,
+        "laffer_position": 0.32,
+        "compliance_gap": 25.0
+      },
+      "microsimulation": {
+        "total_tax_revenue": 0.0,
+        "average_effective_rate": 0.0,
+        "companies_affected": 0,
+        "validation_passed": true
+      },
+      "sectoral_impacts": {
+        "Accommodation and food service activities": 0.0005269189982869726,
+        "Activities of households as employers": 0.0005081572722081734,
+        "Agriculture, forestry and fishing": 0.0005106044538706254,
+        "Arts, entertainment and recreation": 0.0040124086622898,
+        "Construction": 0.0006060445387062564,
+        "Education": 0.0005252875438453379,
+        "Financial and insurance activities": 0.00061420181091443,
+        "Information and communication": 0.0005269189982869726,
+        "Manufacturing": 0.0006468308997471243,
+        "Professional, scientific and technical activities": 0.0005342605432743288
+      },
+      "sector_distribution": {
+        "Accommodation and food service activities": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0.0005269189982869726
+        },
+        "Manufacturing": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0.0006468308997471243
+        },
+        "Wholesale and retail trade; repair of motor vehicles and motorcycles": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0
+        },
+        "Electricity, gas, steam and air conditioning supply": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0
+        },
+        "Construction": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0.0006060445387062564
+        },
+        "Information and communication": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0.0005269189982869726
+        },
+        "Financial and insurance activities": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0.00061420181091443
+        },
+        "Professional, scientific and technical activities": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0.0005342605432743288
+        },
+        "Transportation and storage": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0
+        },
+        "Education": {
+          "company_count": 1,
+          "percentage": 10.0,
+          "dgce_impact": 0.0005252875438453379
+        }
+      },
+      "risk_assessment": {
+        "overall_risk_score": 7.5,
+        "risk_level": "Low",
+        "economic_risk": "Low",
+        "employment_risk": "Low",
+        "compliance_risk": "Medium",
+        "risk_factors": {
+          "gdp_decline": false,
+          "employment_decline": false,
+          "low_compliance": false,
+          "investment_decline": false
+        },
+        "mitigation_recommendations": [
+          "Current policy parameters appear to have manageable risk levels"
+        ]
+      },
+      "dynamic_impacts": {
+        "years": 10,
+        "path": {
+          "year_index": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "gdp": [
+            622144.2499999999,
+            656362.18375,
+            692462.10385625,
+            730547.5195683436,
+            770727.6331446025,
+            813117.6529675554,
+            857839.1238807709,
+            905020.2756942132,
+            954796.390857395,
+            1007310.1923545516
+          ],
+          "consumption": [
+            332337.6,
+            350616.168,
+            369900.05724,
+            390244.5603881999,
+            411708.01120955095,
+            434351.95182607626,
+            458241.3091765103,
+            483444.5811812183,
+            510034.0331461854,
+            538085.9049692255
+          ],
+          "investment": [
+            99527.49999999999,
+            105499.15,
+            111829.099,
+            118538.84494,
+            125651.17563640002,
+            133190.246174584,
+            141181.66094505906,
+            149652.5606017626,
+            158631.7142378684,
+            168149.61709214048
+          ],
+          "government": [
+            110331.0,
+            116399.20499999999,
+            122801.16127499999,
+            129555.22514512498,
+            136680.76252810686,
+            144198.2044671527,
+            152129.1057128461,
+            160496.20652705262,
+            169323.4978860405,
+            178636.29026977273
+          ],
+          "exports": [
+            153237.5,
+            161665.5625,
+            170557.1684375,
+            179937.81270156248,
+            189834.3924001484,
+            200275.28398215654,
+            211290.42460117512,
+            222911.39795423974,
+            235171.52484172294,
+            248105.95870801766
+          ],
+          "imports": [
+            976050.0,
+            1029732.7499999999,
+            1086368.05125,
+            1146118.2940687498,
+            1209154.800242531,
+            1275658.3142558702,
+            1345819.5215399428,
+            1419839.5952246396,
+            1497930.7729619949,
+            1580316.9654749043
+          ],
+          "employment": [
+            2363123.405,
+            2410385.8730999995,
+            2458593.5905619995,
+            2507765.4623732404,
+            2557920.771620705,
+            2609079.187053119,
+            2661260.770794181,
+            2714485.9862100645,
+            2768775.705934266,
+            2824151.2200529515
+          ]
+        }
+      },
+      "oil_sector": {
+        "production": 0.0,
+        "revenue": 0.0
+      },
+      "policy_parameters": {
+        "standard_rate": 0.08,
+        "compliance": 0.75,
+        "threshold": 375000.0,
+        "small_biz_threshold": 3000000.0,
+        "oil_gas_rate": 0.55,
+        "vat_rate": 0.05,
+        "government_spending_rel_change": 0.0,
+        "time_horizon": 10,
+        "incentives": {
+          "hq_incentive": true
+        }
+      },
+      "analysis_timestamp": "2025-11-09T12:53:57.674858",
+      "analysis_type": "comprehensive",
+      "model_version": "enhanced_fixed",
+      "scenario_name": "regional_leader",
+      "scenario_description": "Regional leadership through competitive rates and HQ incentives",
+      "scenario_parameters": {
+        "standard_rate": 0.08,
+        "compliance": 0.75,
+        "time_horizon": 10,
+        "incentives": {
+          "hq_incentive": true
+        },
+        "description": "Regional leadership through competitive rates and HQ incentives"
+      }
+    }
+  },
+  "subpolicy_single_rule": {
+    "corporate_tax_rate_pct": 9.0,
+    "micro_tax_revenue": 0.0,
+    "revenue_change_m": -4.77984375,
+    "revenue_change_pct": -29.289436041201107,
+    "avg_effective_rate_pct": 0.0,
+    "gdp_impact_pct": -0.7798097316257443,
+    "employment_impact_pct": -0.0037572650705604044,
+    "investment_impact_pct": -2.4655530699339496,
+    "consumption_impact_pct": -0.7272246734793405,
+    "total_companies": 10,
+    "taxable_companies": 0,
+    "tax_base_companies_pct": 0.0,
+    "compliance_metrics": {
+      "expected_compliance_rate": 70.0,
+      "implied_compliance_rate": 0,
+      "compliance_gap_m": 0.0,
+      "total_potential_tax_m": 0.0,
+      "actual_collections_m": 0.0
+    },
+    "revenue_analysis": {
+      "new_corporate_tax_base": 70812.5,
+      "projected_revenue": 11539.5,
+      "revenue_change": -4.77984375,
+      "revenue_change_pct": -29.289436041201107,
+      "corporate_component": 0.0,
+      "oil_component": 0.0,
+      "vat_component": 11539.5,
+      "effective_rate": 0.063,
+      "compliance_impact": -318.6562500000003,
+      "gross_microsim_corporate_tax": 0.0,
+      "baseline_revenue": 16319.34375,
+      "validation_passed": true
+    },
+    "simulation_valid": true,
+    "validation_details": {
+      "total_tax": 0.0,
+      "total_revenue": 286520000,
+      "avg_rate": 0.0,
+      "validation_passed": true,
+      "checks": {
+        "positive_tax": true,
+        "reasonable_rate": true,
+        "revenue_consistency": true,
+        "no_extreme_outliers": true
+      }
+    },
+    "simulation_timestamp": "2025-11-09T12:53:57.708702",
+    "parameters_used": {
+      "standard_rate": 0.09,
+      "oil_gas_rate": 0.55,
+      "vat_rate": 0.05,
+      "compliance": 0.7,
+      "threshold": 0.0,
+      "small_biz_threshold": 4000000.0,
+      "government_spending_rel_change": 0.0,
+      "incentives": {}
+    },
+    "dynamic_path": {
+      "year_index": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "gdp": [
+        612950.0,
+        646662.25,
+        682228.67375,
+        719751.2508062499,
+        759337.5696005936
+      ],
+      "consumption": [
+        329700.0,
+        347833.5,
+        366964.34249999997,
+        387147.38133749994,
+        408440.48731106246
+      ],
+      "investment": [
+        97100.0,
+        102926.0,
+        109101.56000000001,
+        115647.6536,
+        122586.51281600003
+      ],
+      "government": [
+        110331.0,
+        116399.20499999999,
+        122801.16127499999,
+        129555.22514512498,
+        136680.76252810686
+      ],
+      "exports": [
+        153237.5,
+        161665.5625,
+        170557.1684375,
+        179937.81270156248,
+        189834.3924001484
+      ],
+      "imports": [
+        976050.0,
+        1029732.7499999999,
+        1086368.05125,
+        1146118.2940687498,
+        1209154.800242531
+      ],
+      "employment": [
+        2342045.0,
+        2388885.9,
+        2436663.618,
+        2485396.8903600005,
+        2535104.8281672
+      ]
+    },
+    "rule_analysis": {
+      "rule_type": "small_business",
+      "parameters": {
+        "threshold": 4000000
+      }
+    }
+  },
+  "subpolicy_multiple_rules": {
+    "corporate_tax_rate_pct": 9.0,
+    "micro_tax_revenue": 0.0,
+    "revenue_change_m": -4.77984375,
+    "revenue_change_pct": -29.289436041201107,
+    "avg_effective_rate_pct": 0.0,
+    "gdp_impact_pct": -0.7798097316257443,
+    "employment_impact_pct": -0.0037572650705604044,
+    "investment_impact_pct": -2.4655530699339496,
+    "consumption_impact_pct": -0.7272246734793405,
+    "total_companies": 10,
+    "taxable_companies": 0,
+    "tax_base_companies_pct": 0.0,
+    "compliance_metrics": {
+      "expected_compliance_rate": 70.0,
+      "implied_compliance_rate": 0,
+      "compliance_gap_m": 0.0,
+      "total_potential_tax_m": 0.0,
+      "actual_collections_m": 0.0
+    },
+    "revenue_analysis": {
+      "new_corporate_tax_base": 70812.5,
+      "projected_revenue": 11539.5,
+      "revenue_change": -4.77984375,
+      "revenue_change_pct": -29.289436041201107,
+      "corporate_component": 0.0,
+      "oil_component": 0.0,
+      "vat_component": 11539.5,
+      "effective_rate": 0.063,
+      "compliance_impact": -318.6562500000003,
+      "gross_microsim_corporate_tax": 0.0,
+      "baseline_revenue": 16319.34375,
+      "validation_passed": true
+    },
+    "simulation_valid": true,
+    "validation_details": {
+      "total_tax": 0.0,
+      "total_revenue": 286520000,
+      "avg_rate": 0.0,
+      "validation_passed": true,
+      "checks": {
+        "positive_tax": true,
+        "reasonable_rate": true,
+        "revenue_consistency": true,
+        "no_extreme_outliers": true
+      }
+    },
+    "simulation_timestamp": "2025-11-09T12:53:57.743619",
+    "parameters_used": {
+      "standard_rate": 0.09,
+      "oil_gas_rate": 0.55,
+      "vat_rate": 0.05,
+      "compliance": 0.7,
+      "threshold": 0.0,
+      "small_biz_threshold": 4500000.0,
+      "government_spending_rel_change": 0.0,
+      "incentives": {}
+    },
+    "dynamic_path": {
+      "year_index": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "gdp": [
+        612950.0,
+        646662.25,
+        682228.67375,
+        719751.2508062499,
+        759337.5696005936
+      ],
+      "consumption": [
+        329700.0,
+        347833.5,
+        366964.34249999997,
+        387147.38133749994,
+        408440.48731106246
+      ],
+      "investment": [
+        97100.0,
+        102926.0,
+        109101.56000000001,
+        115647.6536,
+        122586.51281600003
+      ],
+      "government": [
+        110331.0,
+        116399.20499999999,
+        122801.16127499999,
+        129555.22514512498,
+        136680.76252810686
+      ],
+      "exports": [
+        153237.5,
+        161665.5625,
+        170557.1684375,
+        179937.81270156248,
+        189834.3924001484
+      ],
+      "imports": [
+        976050.0,
+        1029732.7499999999,
+        1086368.05125,
+        1146118.2940687498,
+        1209154.800242531
+      ],
+      "employment": [
+        2342045.0,
+        2388885.9,
+        2436663.618,
+        2485396.8903600005,
+        2535104.8281672
+      ]
+    },
+    "rules_analysis": [
+      {
+        "type": "small_business",
+        "parameters": {
+          "threshold": 4500000
+        }
+      },
+      {
+        "type": "free_zone",
+        "parameters": {
+          "qualifying_income_rate": 0.6
+        }
+      }
+    ]
+  }
+}

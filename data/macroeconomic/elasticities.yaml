@@ -1,0 +1,13 @@
+gdp_elasticity_tax: -1.4
+consumption_elasticity_tax: -0.7
+investment_elasticity_tax: -2.1
+employment_elasticity_gdp: 0.58
+
+vat_elasticity_gdp: -0.28
+vat_elasticity_consumption: -0.75
+
+gov_spending_multiplier_gdp: 0.95
+gov_spending_multiplier_employment: 0.55
+
+# Example elasticities used during testing. Update with jurisdiction-specific
+# estimates before running policy scenarios on confidential data.

@@ -1,0 +1,7 @@
+description: Depletion allowance rate for oil and gas reserves
+metadata:
+  reference: Standard depletion calculation methods
+  unit: /1
+values:
+  2023-06-01:
+    value: 0.15  # 15% depletion allowance

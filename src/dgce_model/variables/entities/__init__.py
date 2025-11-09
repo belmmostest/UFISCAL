@@ -1,0 +1,1 @@
+# Entity variables module
