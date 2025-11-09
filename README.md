@@ -107,6 +107,10 @@ requests are welcome—high-impact areas include enriching the Policy Shock
 Engine with new elasticities and extending the dashboard with additional
 scenario levers.
 
+## Citation
+If you use Decreon or reference its work, please cite:
+**Decreon (2025).** Available at [https://decreon.ai](https://decreon.ai)
+
 ## License
 UFISCAL is released under the CC BY-NC License.
 Shield: [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
